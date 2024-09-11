@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N-Queens Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: bisque;">
+    <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">N-Queens Visualizer</h1>
+    <div id="controls">
+        <label for="board-size">Board Size:</label>
+        <input type="number" id="board-size" min="1" max="10">
+        <button id="solve-btn">Solve</button>
+    </div>
+    <div id="solving-board-container">
+        <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Solving Process Visualisation</h2>
+        <div id="solving-board"></div>
+    </div>
+    <div id="solutions-container">
+        <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Solutions</h2>
+        <div id="solutions"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#controls {
+    margin-bottom: 20px;
+}
+
+#solving-board-container, #solutions-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#solving-board, #solutions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.board {
+    display: grid;
+    margin: 10px;
+    border: 2px solid #dda071e1;
+    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    transition: background-color 0.5s;
+    /* border: 1px solid #333; Cell border for partitioning */
+}
+
+.cell:nth-child(odd) {
+    background-color: #e7b287;
+
+}
+
+.cell:nth-child(even) {
+    background-color: #f0d9b5;
+}
+
+.row-even .cell:nth-child(odd) {
+    background-color: #f0d9b5;
+}
+
+.row-even .cell:nth-child(even) {
+    background-color: #e7b287;
+}
+
+.cell.highlight {
+    background-color: #ffff99 !important;
+}
+
+.no-solution {
+    font-size: 18px;
+    color: red;
+    margin-top: 20px;
+}
